@@ -54,7 +54,7 @@ const CourseStudy = ({ user }) => {
 
   const fetchPDFs = async () => {
     try {
-      const response = await fetch('http://localhost:5001/api/course-pdfs');
+      const response = await fetch('https://elearning-wr32.onrender.com/api/course-pdfs');
       const data = await response.json();
       if (response.ok) {
         setPdfs(data);
@@ -67,7 +67,7 @@ const CourseStudy = ({ user }) => {
 
   const fetchAssignments = async () => {
     try {
-      const response = await fetch('http://localhost:5001/api/assignments');
+      const response = await fetch('https://elearning-wr32.onrender.com/api/assignments');
       const data = await response.json();
       if (response.ok) {
         setAssignments(data);
@@ -80,7 +80,7 @@ const CourseStudy = ({ user }) => {
 
   const fetchMarks = async () => {
     try {
-      const response = await fetch('http://localhost:5001/api/marks');
+      const response = await fetch('https://elearning-wr32.onrender.com/api/marks');
       if (!response.ok) {
         const errorData = await response.json();
         console.error('Server error:', errorData);
@@ -98,7 +98,7 @@ const CourseStudy = ({ user }) => {
 
   const fetchMySubmissions = async () => {
     try {
-      const response = await fetch(`http://localhost:5001/api/assignments/submissions/${user._id}`);
+      const response = await fetch(`https://elearning-wr32.onrender.com/api/assignments/submissions/${user._id}`);
       const data = await response.json();
       if (response.ok) {
         // Convert array to object with assignmentId as key
@@ -138,7 +138,7 @@ const CourseStudy = ({ user }) => {
     formData.append('studentId', user._id);
 
     try {
-      const response = await fetch(`http://localhost:5001/api/assignments/${assignmentId}/submit`, {
+      const response = await fetch(`https://elearning-wr32.onrender.com/api/assignments/${assignmentId}/submit`, {
         method: 'POST',
         body: formData,
       });
@@ -237,7 +237,7 @@ const CourseStudy = ({ user }) => {
                         <p>Uploaded: {new Date(pdf.uploadedAt).toLocaleDateString()}</p>
                       </div>
                       <a 
-                        href={`http://localhost:5001/uploads/${pdf.fileName}`}
+                        href={`https://elearning-wr32.onrender.com/uploads/${pdf.fileName}`}
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="view-button"
@@ -276,7 +276,7 @@ const CourseStudy = ({ user }) => {
                         </div>
                         <div className="assignment-actions">
                           <a 
-                            href={`http://localhost:5001/uploads/${assignment.fileName}`}
+                            href={`https://elearning-wr32.onrender.com/uploads/${assignment.fileName}`}
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="view-button"
@@ -290,7 +290,7 @@ const CourseStudy = ({ user }) => {
                                 Submitted on {new Date(mySubmission.submittedAt).toLocaleString()}
                               </p>
                               <a 
-                                href={`http://localhost:5001/uploads/${mySubmission.fileName}`}
+                                href={`https://elearning-wr32.onrender.com/uploads/${mySubmission.fileName}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="view-button"

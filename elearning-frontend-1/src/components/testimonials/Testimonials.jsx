@@ -10,7 +10,7 @@ const Testimonials = () => {
       message:
         "This platform helped me learn so effectively. The courses are amazing and the instructors are top-notch.",
       image:
-        "/src/images/sam.jpg",
+        "/images/sam.jpg",
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const Testimonials = () => {
       message:
         "I've learned more here than in any other place. The interactive lessons and quizzes make learning enjoyable.",
       image:
-        "/src/images/majid.jpg",
+        "/images/majid.jpg",
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ const Testimonials = () => {
       message:
         "This platform helped me learn so effectively. The courses are amazing and the instructors are top-notch.",
       image:
-        "/src/images/pranesh.jpg",
+        "/images/pranesh.jpg",
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ const Testimonials = () => {
       message:
         "I've learned more here than in any other place. The interactive lessons and quizzes make learning enjoyable.",
       image:
-        "/src/images/khalid.jpg",
+        "/images/khalid.jpg",
     },
   ];
 

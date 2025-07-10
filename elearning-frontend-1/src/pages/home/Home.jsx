@@ -81,7 +81,7 @@ const Home = ({ user }) => {
         <div className="feature-cards">
           <div
             className="feature-card"
-            style={{ backgroundImage: 'url("/src/images/earth.jpg")' }}
+            style={{ backgroundImage: 'url("/images/earth.jpg")' }}
           >
             <div className="feature-card-text">
               <h3>Global Community</h3>
@@ -90,7 +90,7 @@ const Home = ({ user }) => {
           </div>
           <div
             className="feature-card"
-            style={{ backgroundImage: 'url("/src/images/education.png")' }}
+            style={{ backgroundImage: 'url("/images/education.png")' }}
           >
             <div className="feature-card-text">
               <h3>Live Sessions</h3>
@@ -99,7 +99,7 @@ const Home = ({ user }) => {
           </div>
           <div
             className="feature-card"
-            style={{ backgroundImage: 'url("/src/images/certificate.jpg")' }}
+            style={{ backgroundImage: 'url("/images/certificate.jpg")' }}
           >
             <div className="feature-card-text">
               <h3>Earn Rewards</h3>
@@ -126,7 +126,7 @@ const Home = ({ user }) => {
     </button>
   </div>
  
-  <img src="/src/images/thumbnail-removebg.png" alt="Join Now" className="cta-image" />
+  <img src="/images/thumbnail-removebg.png" alt="Join Now" className="cta-image" />
 </div>
 
 
