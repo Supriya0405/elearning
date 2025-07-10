@@ -1,0 +1,268 @@
+:root {
+  --primary-color: #6552D0;
+  --secondary-color: #4A4A4B;
+  --accent-color: #8A70D6;
+  --text-primary: #2D2D2D;
+  --text-secondary: #666666;
+  --bg-light: #F9F9F9;
+  --bg-white: #FFFFFF;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: var(--bg-white);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+header nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: var(--transition);
+  position: relative;
+}
+
+header nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: var(--transition);
+}
+
+header nav a:hover {
+  color: var(--primary-color);
+}
+
+header nav a:hover::after {
+  width: 100%;
+}
+
+header .contact-btn {
+  background-color: var(--primary-color);
+  color: var(--bg-white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+header .contact-btn:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 5%;
+  background: linear-gradient(135deg, var(--bg-light) 0%, #F0F0F5 100%);
+  min-height: calc(100vh - 80px);
+  gap: 4rem;
+}
+
+.hero-section .content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.hero-section .cta-btn {
+  background-color: var(--primary-color);
+  color: var(--bg-white);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-section .cta-btn:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.hero-section .image {
+  flex: 1;
+  max-width: 600px;
+  position: relative;
+}
+
+.hero-section .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: var(--shadow-md);
+}
+
+/* Partners Section */
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 5%;
+  background-color: var(--bg-white);
+  flex-wrap: wrap;
+}
+
+.partners img {
+  max-width: 140px;
+  height: auto;
+  opacity: 0.7;
+  transition: var(--transition);
+  filter: grayscale(100%);
+}
+
+.partners img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Section Styles */
+section {
+  padding: 5rem 5%;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-light);
+}
+
+/* Footer Styles */
+footer {
+  padding: 3rem 5%;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  text-align: center;
+  color: var(--bg-white);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 5%;
+  }
+
+  .hero-section .content,
+  .hero-section .image {
+    max-width: 100%;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 1rem 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  header nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .hero-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .partners {
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .partners img {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  header nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1.1rem;
+  }
+}

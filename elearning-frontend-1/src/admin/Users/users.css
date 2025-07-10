@@ -1,0 +1,82 @@
+/* Ensure the users container covers the full screen */
+.users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full height of the viewport */
+    width: 215%;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .users h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #383b39; /* Matching green theme */
+  }
+  
+  .users-table {
+    width: 80%;
+    max-width: 1200px; /* Limit max width */
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .users-table th,
+  .users-table td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .users-table th {
+    background-color: #545553; /* Green header background */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .users-table td {
+    border-bottom: 1px solid #dcdcdc;
+  }
+  
+  .users-table tr:hover {
+    background-color: #bdbdbd; /* Light green background on hover */
+  }
+  
+  .update-role-btn {
+    padding: 8px 16px;
+    color: #dcdbd7;
+    background-color: rgb(50, 49, 49);
+    border: 1px solid;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .update-role-btn:hover {
+    color: rgb(50, 49, 49);
+    border: 2px solid rgb(50, 49, 49);
+    background-color: #dcdbd7;/* Hover green effect */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .users {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .users-table {
+      font-size: 14px;
+    }
+  
+    .update-role-btn {
+      padding: 6px 12px;
+    }
+  }
+  

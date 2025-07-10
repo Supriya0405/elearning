@@ -1,0 +1,155 @@
+/* General styling for the courses page */
+.courses {
+  padding: 60px 20px;
+  text-align: center;
+  min-height: 70vh;
+  background: hsla(210, 2%, 84%, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 36px;
+  color: #282828;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Bar Styling */
+.search-bar {
+  margin: 20px 0;
+}
+
+.search-bar input {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #838584;
+  width: 100%;
+  max-width: 400px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-bar input:focus {
+  border-color: #292929;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Results Section */
+.filtered-courses {
+  margin-top: 30px;
+}
+
+.filtered-courses h3 {
+  font-size: 24px;
+  color: #282828;
+  text-transform: uppercase;
+}
+
+/* Course Containers */
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Popular Courses */
+.popular-courses {
+  margin: 40px 0;
+}
+
+.popular-courses h3 {
+  font-size: 24px;
+  color: #282828;
+  text-transform: uppercase;
+}
+
+/* Course Categories */
+.course-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.category-section {
+  margin-bottom: 40px;
+}
+
+.category-section h3 {
+  font-size: 22px;
+  color: #282828;
+  text-transform: capitalize;
+}
+
+/* Course Cards */
+.course-item {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Course Image */
+.course-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.course-image:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+.course-btn {
+  padding: 10px 20px;
+  background-color: #5ec980;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.course-btn:hover {
+  background-color: #3fa55b;
+  transform: translateY(-3px);
+}
+
+.course-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .courses {
+    padding: 40px 15px;
+  }
+
+  .course-container {
+    gap: 20px;
+  }
+
+  .category-section h3 {
+    font-size: 20px;
+  }
+
+  .popular-courses h3 {
+    font-size: 22px;
+  }
+}

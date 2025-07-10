@@ -1,0 +1,118 @@
+.course-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  margin: 1rem;
+  width: 320px;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.course-card h3 {
+  margin: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.instructor {
+  margin: 0.5rem 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.course-details {
+  padding: 0 1rem 1rem;
+}
+
+.description {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.course-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.course-meta p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.course-meta i {
+  color: #4a90e2;
+}
+
+.tags {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background: #e8f0fe;
+  color: #4a90e2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+.common-btn {
+  width: calc(100% - 2rem);
+  margin: 0 1rem 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background: #4a90e2;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.common-btn:hover {
+  background: #357abd;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 1rem 1rem;
+  width: 100%;
+}
+
+.admin-actions .common-btn {
+  flex: 1;
+  margin: 0;
+}
+
+.delete-btn {
+  background: #dc3545;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+.delete-btn:disabled {
+  background: #e9a8ae;
+  cursor: not-allowed;
+}

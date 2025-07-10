@@ -1,0 +1,137 @@
+.sidebar {
+  background: linear-gradient(180deg, var(--primary) 0%, var(--primary-light) 100%);
+  width: 250px;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: var(--bg-white);
+  transition: all 0.3s ease;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: var(--bg-white);
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.sidebar .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.sidebar a:hover .icon {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.sidebar span {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Active Link Styles */
+.sidebar a.active {
+  background: rgba(255, 255, 255, 0.15);
+  font-weight: 600;
+}
+
+.sidebar a.active .icon {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 70px;
+    padding: 1rem 0.5rem;
+  }
+
+  .sidebar span {
+    display: none;
+  }
+
+  .sidebar .icon {
+    margin-right: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
+  }
+
+  .sidebar a {
+    justify-content: center;
+    padding: 0.8rem;
+  }
+
+  .sidebar a:hover {
+    transform: translateX(0) scale(1.1);
+  }
+}
+
+/* Animation for mobile menu toggle */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.sidebar.mobile-open {
+  animation: slideIn 0.3s ease forwards;
+}
+
+.dashboard-admin {
+  display: flex;
+  margin-left: 250px; /* Sidebar offset */
+  min-height: 100vh;
+  padding: 20px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  
+  @media (max-width: 1024px) {
+    margin-left: 200px; /* Adjust for smaller sidebar */
+  }
+  
+  @media (max-width: 768px) {
+    margin-left: 70px; /* Adjust for smaller sidebar */
+    flex-direction: column;
+  }
+}

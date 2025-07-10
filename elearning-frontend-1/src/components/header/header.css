@@ -1,0 +1,101 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgb(246, 243, 243); /* Purple and gray gradient */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: relative;
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #1e0606;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-left: -9px;
+  text-decoration: none;
+}
+
+.logo:hover {
+  transform: scale(1.02);
+}
+
+.logo-image {
+  width: 80px; /* Increased size */
+  height: auto;
+  margin-right: 0px; /* Space between image and text */
+}
+
+@media (max-width: 768px) {
+  .logo-image {
+    width: 45px; /* Adjusted size for smaller screens */
+  }
+}
+
+.link {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    gap: 1rem; /* Adjust gap for smaller screens */
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #121212; /* White links for contrast */
+    padding: 5px 15px; /* Adjusted padding for better spacing */
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s ease;
+
+    &:hover {
+      color: #ffffff; /* Purple text on hover */
+      background-color: #3d3d3f; /* Light purple background */
+      box-shadow: 0px 4px 6px rgba(28, 28, 33, 0.2); /* Shadow effect */
+      transform: scale(1.1); /* Slight zoom */
+    }
+
+    @media (max-width: 768px) {
+      font-size: 14px; /* Smaller font size for compact design */
+      padding: 5px 10px; /* Adjusted padding */
+    }
+  }
+}
+
+.logout-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.3s ease;
+  margin-left: 10px;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+.logout-btn:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  .logout-btn {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}

@@ -1,0 +1,387 @@
+.course-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+/* Header Styles */
+.course-header {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.course-header h1 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.instructor {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.description {
+  color: #555;
+  line-height: 1.6;
+  margin: 1rem 0 0;
+}
+
+/* Navigation Styles */
+.course-navigation {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #555;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.nav-button svg {
+  font-size: 1.2rem;
+}
+
+.nav-button:hover {
+  background: #f0f0f0;
+  transform: translateY(-1px);
+}
+
+.nav-button.active {
+  background: #3d3d3f;
+  color: white;
+}
+
+/* Content Section */
+.content-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Notes Section */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.note-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-2px);
+}
+
+.note-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.note-icon {
+  font-size: 2rem;
+  color: #3d3d3f;
+}
+
+.note-info h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.note-info p {
+  margin: 0.5rem 0 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.download-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background: #3d3d3f;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.download-button:hover {
+  background: #2a2a2a;
+}
+
+/* Assignments Section */
+.assignments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.assignment-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.assignment-card h3 {
+  margin: 0 0 1rem;
+  color: #2c3e50;
+}
+
+.assignment-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.assignment-info p {
+  margin: 0;
+  color: #666;
+}
+
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status.submitted {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.graded {
+  background: #cce5ff;
+  color: #004085;
+}
+
+.assignment-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.view-button,
+.submit-button {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.view-button {
+  background: #e9ecef;
+  color: #2c3e50;
+}
+
+.view-button:hover {
+  background: #dee2e6;
+}
+
+.submit-button {
+  background: #3d3d3f;
+  color: white;
+}
+
+.submit-button:hover {
+  background: #2a2a2a;
+}
+
+/* Marks Section */
+.marks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.mark-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.mark-card h3 {
+  margin: 0 0 1.5rem;
+  color: #2c3e50;
+}
+
+.score-section {
+  margin: 1.5rem 0;
+}
+
+.score-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #3d3d3f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.score {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.total {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.feedback {
+  text-align: left;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #dee2e6;
+}
+
+.feedback h4 {
+  margin: 0 0 0.5rem;
+  color: #2c3e50;
+}
+
+.feedback p {
+  margin: 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Certifications Section */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.certification-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cert-platform {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.25rem 0.75rem;
+  background: #3d3d3f;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.certification-card h3 {
+  margin: 1.5rem 0 1rem;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.duration {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+  margin: 0 0 1.5rem;
+}
+
+.enroll-button {
+  display: inline-block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #3d3d3f;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.enroll-button:hover {
+  background: #2a2a2a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .course-details-container {
+    padding: 1rem;
+  }
+
+  .course-header {
+    padding: 1.5rem;
+  }
+
+  .course-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .course-navigation {
+    flex-direction: column;
+  }
+
+  .nav-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .notes-grid,
+  .assignments-grid,
+  .marks-grid,
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .score-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .score {
+    font-size: 2rem;
+  }
+}

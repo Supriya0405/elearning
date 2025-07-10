@@ -1,0 +1,204 @@
+.lecture-page {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80vh;
+    background:  rgb(171, 167, 167); /* Green gradient background for the page */
+    padding: 20px;
+    border-radius: 10px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left {
+        width: 70%;
+        padding: 10px;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+
+        video {
+            border: 2px solid #292929;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #ffffff;
+            margin-top: 10px;
+            margin-left: 400px;
+            text-shadow: 2px 2px 5px rgba(78, 76, 76, 0.6), 0 0 25px rgba(0, 0, 0, 0.2); /* Added light gray shadow */
+        }
+        
+
+        h3 {
+            font-size: 18px;
+            color: #f9f9f9;
+            margin-top: 5px;
+        }
+    }
+
+    .right {
+        width: 30%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+
+        @media (max-width: 768px) {
+            width: 80%;
+            margin-bottom: 10px;
+        }
+
+        .lecture-form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+
+            h2 {
+                font-size: 22px;
+                color: linear-gradient(135deg, #9a9a9f, rgb(246, 243, 243)); /* Green color for headings */
+                margin-bottom: 15px;
+            }
+
+            form {
+                text-align: left;
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-size: 14px;
+                    color: #444;
+                }
+
+                input[type="text"],
+                input[type="file"] {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 15px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 14px;
+                }
+
+                input[type="file"] {
+                    background-color: #f9f9f9;
+                }
+
+                button {
+                    width: 100%;
+                    padding: 10px;
+                    background:  rgb(94, 93, 93); /* Green gradient for buttons */
+                    color: white;
+                    font-size: 16px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background: linear-gradient(120deg, #383938, #545553); /* Hover effect with reversed gradient */
+                    }
+
+                    &:disabled {
+                        background-color: #bcbcbc;
+                        cursor: not-allowed;
+                    }
+                }
+            }
+        }
+
+        .lecture-number {
+            background-color: #e0e0e0; /* Light gray */
+            padding: 10px;
+            border: 1px solid #ccc; /* Light gray border */
+            margin-top: 10px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease; /* Animation transition for smooth effect */
+        
+            &:hover {
+                background-color: #333; /* Dark gray on hover */
+                color: white;
+                transform: scale(1.05); /* Slight scaling animation */
+            }
+        }
+        
+
+        .active {
+            background: gray; /* Active state with gradient */
+            color: white;
+        }
+
+        button {
+            background: linear-gradient(120deg, #e53935, #d32f2f); /* Red gradient for delete buttons */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: linear-gradient(120deg, #d32f2f, #e53935); /* Hover effect with reversed red gradient */
+            }
+        }
+    }
+}
+
+.progress {
+    width: 80%; /* Adjust width */
+    background: rgb(107, 105, 105); /* Dark gray background */
+    padding: 8px;
+    border-radius: 5px;
+    margin: 10px auto;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.progress:hover {
+    color: white;
+    background-color: rgb(144, 141, 141); /* Slightly darker gray when hovered */
+}
+
+progress {
+    width: 100%;
+    margin-top: 5px;
+    height: 12px;
+    border-radius: 5px;
+    appearance: none; /* Remove default appearance */
+    transition: all 0.3s ease; /* Smooth animation on progress change */
+}
+
+progress::-webkit-progress-bar {
+    background-color: rgb(249, 245, 245); /* Darker gray background for the progress bar */
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background: rgb(62, 61, 61); /* Dark gray gradient for progress value */
+    border-radius: 5px;
+}
+
+
+progress::-moz-progress-bar {
+    background: linear-gradient(120deg, rgb(120, 120, 120), rgb(85, 85, 85)); /* Dark gray gradient for Firefox */
+    border-radius: 5px;
+}
+
+progress::-ms-fill {
+    background: linear-gradient(120deg, rgb(120, 120, 120), rgb(85, 85, 85)); /* Dark gray gradient for IE */
+    border-radius: 5px;
+}

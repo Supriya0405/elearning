@@ -1,0 +1,35 @@
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-left: 100px;
+    flex-wrap: wrap;
+    margin-top: 70px; /* Added space for better layout */
+}
+
+.box {
+    /* margin-left: 0px; */
+    margin-left: 50px;
+    background:rgb(183, 182, 182); /* Green gradient for consistency */
+    padding: 20px;
+    
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px; /* Adjusted for spacing */
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Soft shadow effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions for hover effects */
+    
+    &:hover {
+        background-color: #676667; /* Darker background on hover for contrast */
+        transform: translateY(-5px); /* Lift effect on hover */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+    }
+}
+
+.box p{
+    color: black;
+}

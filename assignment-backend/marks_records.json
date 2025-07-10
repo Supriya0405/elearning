@@ -1,0 +1,37 @@
+[
+  {
+    "_id": "1748666801359",
+    "studentId": "local-user-1",
+    "marks": "93",
+    "subject": "cc",
+    "uploadedAt": "2025-05-31T04:46:41.359Z"
+  },
+  {
+    "_id": "1748666960689",
+    "studentId": "local-user-1",
+    "marks": "55",
+    "subject": "abc",
+    "uploadedAt": "2025-05-31T04:49:20.689Z"
+  },
+  {
+    "_id": "1748667050038",
+    "studentId": "test-student",
+    "marks": 95,
+    "subject": "Test Subject",
+    "uploadedAt": "2025-05-31T04:50:50.038Z"
+  },
+  {
+    "_id": "1748667248441",
+    "studentId": "local-user-1",
+    "marks": "100",
+    "subject": "fsd",
+    "uploadedAt": "2025-05-31T04:54:08.441Z"
+  },
+  {
+    "_id": "1752123810787",
+    "studentId": "local-user-1",
+    "marks": "78",
+    "subject": "Cloud",
+    "uploadedAt": "2025-07-10T05:03:30.787Z"
+  }
+]
